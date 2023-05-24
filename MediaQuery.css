@@ -1,0 +1,33 @@
+@media screen and (min-width: 1300px) {
+    
+    body{
+        height: 100vh;
+    }
+
+    main{
+        margin:0;
+        grid-template-areas: 
+        "card1 card1 card2 card5"
+        "card3 card4 card4 card5"
+        ;
+        grid-template-columns: 20% 30% 20% 20%;
+        gap: 35px;
+    }
+
+    section{
+        padding: 30px;
+        transition: transform 0.2s;
+    }
+
+    section:hover{
+        transform: scale(1.05);
+    }
+
+    h1{
+        font-size: 1.2em;
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+}

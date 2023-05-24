@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 85%;
+    margin: 50px 0;
+    display: grid;
+    grid-template-areas: 
+    
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+
+    ;
+    row-gap: 40px;
+}
+
+section{
+    padding: 30px 40px 45px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+
+section > h1{
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+section > p{
+    opacity: 70%;
+    line-height: 1.5;
+}
+
+section:nth-child(1){
+    background: var(--Moderate-violet) url(images/bg-pattern-quotation.svg) no-repeat right 20% top;
+
+    grid-area: card1;
+}
+
+section:nth-child(2){
+    background-color: var(--Very-dark-grayish-blue);
+
+    grid-area: card2;
+}
+
+section:nth-child(3){
+    background-color: var(--White);
+    color: black;
+
+    grid-area: card3;
+}
+
+section:nth-child(4){
+    background-color: var(--Very-dark-blackish-blue);
+
+    grid-area: card4;
+}
+
+section:nth-child(5){
+    background-color: var(--White);
+    color: black;
+
+    grid-area: card5;
+}
+
+div.name{
+    display: flex;
+    align-items: center;
+}
+
+div.name > img{
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.479);
+    margin-right: 20px;
+    width: 45px;
+}
+
+div.name p{
+    font-weight: 400;
+}
+
+div.name p::after{
+    content: 'Verified Graduate';
+    display: block;
+    opacity: 50%;
+}
